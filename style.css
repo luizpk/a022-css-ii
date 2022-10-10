@@ -1,24 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+}
+
+body {
+  background-color: rgb(160, 154, 154);
+}
+
 header{
     border-bottom: 1px solid black;
+    background-color: rgb(88, 88, 90);
+    text-align: center;
   }
   
   main{
+    padding: 20px;
     width: 800px;
+    text-align: justify;
+    margin: 0 auto;
+    height: 600px;
   }
   
   aside{
-    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 140px;
     border: 1px solid black;
+    position: fixed;
+    right: 0;
+    top: 400px;
+    text-align: center;
+
+  }
+
+  aside:has(button:active){
+    color: white;
+    background-color: black;
   }
   
   footer{
     background-color: black;
     color: white;
     width: 100%;
+    position: relative;
+    margin-bottom: 0;
   }
   
   button{
     background-color: black;
-    color: white;
+    color:white;
     font-family: serif;
+  }
+
+  button :active{
+    color: black;
+    background-color:white;
   }
